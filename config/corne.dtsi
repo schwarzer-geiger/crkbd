@@ -92,3 +92,8 @@ left_encoder: encoder_left {
         b-gpios = <PIN_10 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         resolution = <4>;
     };
+    
+    sensors {
+        compatible = "zmk,keymap-sensors";
+        sensors = <&left_encoder &right_encoder>;
+    };
