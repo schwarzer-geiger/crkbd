@@ -95,5 +95,5 @@ left_encoder: encoder_left {
     
     sensors {
         compatible = "zmk,keymap-sensors";
-        sensors = <&left_encoder &right_encoder>;
+        sensors = <left_encoder>;
     };
