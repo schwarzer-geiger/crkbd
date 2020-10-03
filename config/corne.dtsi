@@ -91,6 +91,7 @@ left_encoder: encoder_left {
         a-gpios = <&pro_micro_d 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&pro_micro_d 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         resolution = <4>;
+	status = "enabled";
     };
     
     sensors {
