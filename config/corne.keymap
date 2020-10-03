@@ -49,3 +49,4 @@
         };
 };
 
+sensor-bindings = <&inc_dec_cp M_VOLU M_VOLD>;
