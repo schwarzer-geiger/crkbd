@@ -45,16 +45,20 @@ jobs:
         id: west-zephyr-export
         with:
           args: 'zephyr-export'
+      - name: Download all workflow run artifacts
+        uses: actions/download-artifact@v2
       - name: West Build (Corne Left)
         uses: 'docker://zmkfirmware/zephyr-west-action-arm:latest'
         id: west-build-corne-left
         with:
-          args: 'build "-s zmk/app -b nice_nano -- -DSHIELD=corne_left -DZMK_CONFIG=/github/workspace/config"' 
+          args: 'build "-s zmk/app -b nice_nano -- -DSHIELD=corne_left -DZMK_CONFIG=/github/workspace/config"'
       - name: Download all workflow run artifacts
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v2 
       - name: Corne DTS File
         if: ${{ always() }}
         run: cat -n build/zephyr/nice_nano.dts.pre.tmp
+      - name: Download all workflow run artifacts
+        uses: actions/download-artifact@v2
       - name: Corne Left Kconfig file
         run: cat build/zephyr/.config | grep -v "^#" | grep -v "^$"
       - name: Rename zmk.uf2
