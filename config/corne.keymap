@@ -18,6 +18,7 @@
    &kp LSFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp CMMA &kp DOT &kp FSLH &kp RSFT
                    &kp LGUI &mo 1 &kp SPC   &kp RET &mo 2 &kp RALT
                         >;
+                        sensor-bindings = <&inc_dec_cp M_VOLU M_VOLD>;
                 };
                 lower_layer {
 // -----------------------------------------------------------------------------------------
