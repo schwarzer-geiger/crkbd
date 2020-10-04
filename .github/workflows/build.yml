@@ -50,11 +50,11 @@ jobs:
         id: west-build-corne-left
         with:
           args: 'build "-s zmk/app -b nice_nano -- -DSHIELD=corne_left -DZMK_CONFIG=/github/workspace/config"'
-      - name: Corne DTS File
+     - name: Download all workflow run artifacts
+        uses: actions/download-artifact@v2
+    - name: Corne DTS File
         if: ${{ always() }}
         run: cat -n build/zephyr/nice_nano.dts.pre.tmp
-      - name: Download all workflow run artifacts
-        uses: actions/download-artifact@v2
       - name: Corne Left Kconfig file
         run: cat build/zephyr/.config | grep -v "^#" | grep -v "^$"
       - name: Rename zmk.uf2
