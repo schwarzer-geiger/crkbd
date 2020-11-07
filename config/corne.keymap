@@ -13,12 +13,12 @@
 // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | SHFT |
 //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
                         bindings = <
-   &kp TAB  &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I    &kp O   &kp P    &kp BKSP
-   &kp LCTL &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K    &kp L   &kp SCLN &kp QUOT
-   &kp LSFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp CMMA &kp DOT &kp FSLH &kp RSFT
-                   &kp LGUI &mo 1 &kp SPC   &kp RET &mo 2 &kp RALT
+   &kp TAB  &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I    &kp O   &kp P    &kp DEL
+   &kp LALT &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K    &kp L   &kp SCLN &kp BKSP
+   &kp RALT(TAB) &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp CMMA &kp DOT &kp FSLH &kp DOUBLE_QUOTES
+                   &kp LCTL &kp LSFT &kp SPC   &mo 1 &kp SPC &kp LGUI
                         >;
-                        sensor-bindings = <&inc_dec_cp M_VOLU M_VOLD>;
+                        sensor-bindings = <&inc_dec_cp UP_ARROW DOWN_ARROW>;
                 };
                 lower_layer {
 // -----------------------------------------------------------------------------------------
@@ -27,12 +27,12 @@
 // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-   &kp ESC    &kp NUM_1    &kp NUM_2    &kp NUM_3    &kp NUM_4    &kp NUM_5         &kp NUM_6 &kp NUM_7 &kp NUM_8 &kp NUM_9 &kp NUM_0 &kp BKSP
-   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4      &kp LARW  &kp DARW  &kp UARW  &kp RARW  &trans    &trans
-   &kp LSFT   &trans       &trans       &trans       &trans       &trans            &trans    &trans    &trans    &trans    &trans    &trans
-                                        &kp LGUI     &trans       &kp SPC           &kp RET &trans &kp RALT
+   &kp ESC    &kp EXCL     &kp AT       &kp HASH     &kp DOLLAR   &kp PRCNT         &kp CARET &kp AMPS  &kp ASTRK &kp LPAR  &kp RPAR  &kp MINUS
+   &trans     &kp NUM_1    &kp NUM_2    &kp NUM_3    &kp NUM_4    &kp NUM_5         &kp NUM_6 &kp NUM_7 &kp NUM_8 &kp NUM_9 &kp NUM_0 &kp EQUAL
+   &kp LSFT   &trans       &trans       &trans       &kp K_VOL_DN &K_VOL_UP         &trans    &kp RBKT  &LBKT     &kp RBRC  &kp LBRC    &trans
+                                        &kp LGUI     &kp LSFT     &kp SPC           &kp RET   &trans    &kp RALT
                         >;
-                        sensor-bindings = <&inc_dec_cp M_VOLU M_VOLD>;
+                        sensor-bindings = <&inc_dec_cp LEFT_ARROW RIGHT_ARROW>;
                 };
 
                 raise_layer {
