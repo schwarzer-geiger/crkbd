@@ -35,7 +35,7 @@
    &kp LSHFT   &trans       &trans       &trans       &kp K_VOL_DN &kp K_VOL_UP         &trans    &kp RBKT  &kp LBKT     &kp RBRC  &kp LBRC    &trans
                                         &kp LGUI     &kp LSFT     &kp SPC           &mo 1   &trans    &kp RALT
                         >;
-                        sensor-bindings = <&inc_dec_cp RIGHT_ARROW LFT_ARROW>;
+                        sensor-bindings = <&inc_dec_cp RIGHT_ARROW LEFT_ARROW>;
                 };
 
                 raise_layer {
