@@ -18,10 +18,10 @@
 // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | SHFT |
 //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
                         bindings = <
-   &kp TAB  &kp Q &kp W &kp E &kp R &kp T   &kp Z &kp U  &kp I    &kp O   &kp P    &kp BKSP
-   &kp LALT &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K    &kp L   &kp SCLN &kp RET
-   &kp RA(TAB) &kp Y &kp X &kp C &kp V &kp B   &kp N &kp M  &kp CMMA &kp DOT &kp FSLH &kp DOUBLE_QUOTES
-                   &kp LCTRL &kp LSHFT &kp SPC   &mo 1 &kp SPC &kp LGUI
+   &kp ESC  &kp Q &kp W &kp E &kp R &kp T   &kp Z &kp U  &kp I    &kp O   &kp P    &kp BKSP
+   &mt LALT TAB &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K    &kp L   &kp SCLN &kp RET
+   &kp RA(TAB) &kp Y &kp X &kp C &kp V &kp B   &kp N &kp M  &kp CMMA &kp DOT &kp FSLH &kp SQT
+                   &kp LCTRL &kp LSHFT &trans   &mo RAISE &lt LOWER SPACE &kp LGUI
                         >;
                         sensor-bindings = <&inc_dec_cp DOWN_ARROW UP_ARROW>;
                 };
@@ -32,10 +32,10 @@
 // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-   &kp ESC    &kp EXCL     &kp AT       &kp HASH     &kp DOLLAR   &kp PRCNT         &kp CARET &kp AMPS  &kp ASTRK &kp LPAR  &kp RPAR  &kp MINUS
-   &trans     &kp NUM_1    &kp NUM_2    &kp NUM_3    &kp NUM_4    &kp NUM_5         &kp NUM_6 &kp NUM_7 &kp NUM_8 &kp NUM_9 &kp NUM_0 &kp EQUAL
-   &kp LSHFT   &trans       &ext_power EP_OFF       &trans       &kp K_VOL_DN &kp K_VOL_UP         &trans    &kp RBKT  &kp LBKT     &kp RBRC  &kp LBRC    &trans
-                                        &kp LGUI     &kp LSFT     &kp SPC           &mo 1   &trans    &kp RALT
+   &kp ESC    &ktrans     &kp LBKT       &kp RBKT     &kp K_VOL_UP   &kp K_VOL_DN         &trans &trans  &kp MINUS &kp PLUS  &trans  &kp BKSP
+   &kp TAB     &kp NUM_1    &kp NUM_2    &kp NUM_3    &kp NUM_4    &kp NUM_5         &kp NUM_6 &kp NUM_7 &kp NUM_8 &kp NUM_9 &kp NUM_0 &kp DEL
+   &trans   &trans       &ext_power EP_OFF       &kp LBRC       &kp RBRC &trans         &trans    &kp EQUAL  &kp UNDER     &kp RBRC  &kp LBRC    &trans
+                                        &out OUT_TOG     &kp LSFT     &trans           &trans   &trans    &trans
                         >;
                         sensor-bindings = <&inc_dec_cp RIGHT_ARROW LEFT_ARROW>;
                 };
@@ -50,8 +50,9 @@
    &kp  ESC &kp BANG  &kp ATSN  &kp HASH  &kp CURU  &kp PRCT    &kp CRRT  &kp AMPS &kp KMLT &kp LPRN &kp RPRN &kp BKSP
    &kp LCTL &trans    &trans    &trans    &trans    &trans      &kp MINUS &kp EQL  &kp LBKT &kp RBKT &kp PIPE &kp GRAV
    &kp LSFT &trans    &trans    &trans    &trans    &trans      &trans    &trans   &trans   &trans   &kp BSLH &kp TILD
-                                      &kp LGUI &trans &kp SPC   &kp RET &trans &kp RALT
+                                      &trans &trans &trans   &trans &trans &trans
                         >;
+                        sensor-bindings = <&inc_dec_cp LC(PLUS) LC(MINUS)>;
                 };
         };
 };
