@@ -3,7 +3,6 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/ext_power.h>
-#include <dt-bindings/zmk/outputs.h>
 #define DEFAULT 0
 #define LOWER   1
 #define RAISE   2
@@ -36,7 +35,7 @@
    &kp ESC    &trans     &kp LBKT       &kp RBKT     &kp K_VOL_UP   &kp K_VOL_DN         &trans &trans  &kp MINUS &kp PLUS  &trans  &kp BKSP
    &kp TAB     &kp NUM_1    &kp NUM_2    &kp NUM_3    &kp NUM_4    &kp NUM_5         &kp NUM_6 &kp NUM_7 &kp NUM_8 &kp NUM_9 &kp NUM_0 &kp DEL
    &trans   &trans       &ext_power EP_OFF       &kp LBRC       &kp RBRC &trans         &trans    &kp EQUAL  &kp UNDER     &trans  &trans    &trans
-                                        &out OUT_TOG     &kp LSFT     &trans           &trans   &trans    &trans
+                                        &trans     &kp LSFT     &trans           &trans   &trans    &trans
                         >;
                         sensor-bindings = <&inc_dec_cp RIGHT_ARROW LEFT_ARROW>;
                 };
