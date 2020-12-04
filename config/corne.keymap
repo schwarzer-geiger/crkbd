@@ -49,7 +49,7 @@
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
    &kp  ESC &kp BANG  &kp ATSN  &kp HASH  &kp CURU  &kp PRCT    &kp CRRT  &kp AMPS &kp KMLT &kp LPRN &kp RPRN &kp BKSP
-   &kp LCTL &out OUT_BLE    &trans    &trans    &trans    &trans      &kp MINUS &kp EQL  &kp LBKT &kp RBKT &kp PIPE &kp GRAV
+   &kp LCTL &out OUT_BLE    &bt BT_CLR    &trans    &trans    &trans      &kp MINUS &kp EQL  &kp LBKT &kp RBKT &kp PIPE &kp GRAV
    &kp LSFT &trans    &trans    &trans    &trans    &trans      &trans    &trans   &trans   &trans   &kp BSLH &kp TILD
                                       &trans &trans &trans   &trans &trans &trans
                         >;
