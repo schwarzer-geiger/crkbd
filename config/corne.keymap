@@ -19,8 +19,8 @@
 //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
                         bindings = <
    &kp ESC  &kp Q &kp W &kp E &kp R &kp T   &kp Z &kp U  &kp I    &kp O   &kp P    &kp BKSP
-   &mt LALT TAB &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K    &kp L   &kp SCLN &kp RET
-   &kp RA(TAB) &kp Y &kp X &kp C &kp V &kp B   &kp N &kp M  &kp CMMA &kp DOT &kp FSLH &kp SQT
+   &mt LALT TAB &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K    &kp L   &kp APOS &kp RET
+   &kp RA(TAB) &kp Y &kp X &kp C &kp V &kp B   &kp N &kp M  &kp CMMA &kp DOT &kp FSLH &kp DQT
                    &kp LCTRL &kp LSHFT &trans   &mo RAISE &lt LOWER SPACE &kp LGUI
                         >;
                         sensor-bindings = <&inc_dec_cp DOWN_ARROW UP_ARROW>;
